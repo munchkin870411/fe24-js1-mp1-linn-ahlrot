@@ -1,4 +1,4 @@
-// Radfärg
+// rows blue to green
 for(let i=0; i<5; i++){
 
     const newH1 = document.createElement('h1');
@@ -13,25 +13,13 @@ for(let i=0; i<5; i++){
     newH1.style.backgroundColor =`hsla(${newHue}, 100%, 70%, 0.50)`;
 }
 
-
-
-// funktion för att skapa lista
-// const createList = () => {
-//     const list = document.createElement('ul');
-//     for(let i=0; i<10; i++){
-//         const listRow = document.createElement('li');
-//         listRow.innerText = `${i}`
-//         list.append(listRow)
-//     }
-//     return list;
-// }
-
 // main container
 const mainContainer = document.createElement('div');
 mainContainer.className = 'main-container';
 mainContainer.style.border = '1px solid black'
 document.body.append(mainContainer);
-// 
+
+// list containers
 const listContainer1 = document.createElement('div');
 const listContainer2 = document.createElement('div');
 const listContainer3 = document.createElement('div');
@@ -48,7 +36,7 @@ const ulist3 = document.createElement('ul');
 ulist3.classList.add('thirdList');
 ulist3.style.backgroundColor = 'hsl(240 100% 80%)';
 
-// populate first list
+// create content for first list
 for(let i=0; i<10; i++){
     const listItem1 = document.createElement('li');
     listItem1.innerText = i
@@ -67,7 +55,7 @@ for(let i=0; i<10; i++){
     }
 }
 
-// populate second list
+// create content for second list
 for(let i=9; i>=0; i--){
     const listItem2 = document.createElement('li');
     listItem2.innerText = i
@@ -86,7 +74,7 @@ for(let i=9; i>=0; i--){
     }
 }
 
-// populate third list
+// create content for third list
 for(let i=0; i<10; i++){
     const listItem3 = document.createElement('li');
     const listStrings = ['ett','två','tre','fyra','fem','sex','sju','åtta','nio','tio']
@@ -105,17 +93,9 @@ for(let i=0; i<10; i++){
     }
 }
 // append lists to listContainers and listContainers to mainContainer
-listContainer1.append(ulist1)
-listContainer2.append(ulist2)
-listContainer3.append(ulist3)
-mainContainer.append(listContainer1)
-mainContainer.append(listContainer2)
-mainContainer.append(listContainer3)
-
-// for(let i=0; i<3; i++){
-//     const listContainer = document.createElement('div');
-//     listContainer.className = `listContainer${i+1}` 
-//     // const newList = createList();
-//     listContainer.append(newList);
-//     container.append(listContainer);
-// }
+listContainer1.append(ulist1);
+listContainer2.append(ulist2);
+listContainer3.append(ulist3);
+mainContainer.append(listContainer1);
+mainContainer.append(listContainer2);
+mainContainer.append(listContainer3);

@@ -1,4 +1,4 @@
-// rows blue to green
+// rows green to blue
 for(let i=0; i<5; i++){
 
     const newH1 = document.createElement('h1');
